@@ -1,0 +1,26 @@
+<html>
+  <script>
+    
+  //VAR
+    var hojeFezCalor;
+    var ontemFezCalor;
+
+  //VALORES
+    hojeFezCalor = false;
+    ontemFezCalor = true;
+
+  //FUNÇÃO
+    if (hojeFezCalor && ontemFezCalor) { // (&&) ambas precisam ser iguais (e)
+      console.log('Fez calor ontem e hoje');
+    } 
+    
+    if (hojeFezCalor || ontemFezCalor) { // (||) não precisam ser iguais (ou)
+      console.log('Fez calor ontem ou hoje');
+    } 
+
+    if (!hojeFezCalor){ // (!) inverte o valor da variavel
+      console.log('Hoje não fez calor');
+    }
+    
+  </script>
+</html>

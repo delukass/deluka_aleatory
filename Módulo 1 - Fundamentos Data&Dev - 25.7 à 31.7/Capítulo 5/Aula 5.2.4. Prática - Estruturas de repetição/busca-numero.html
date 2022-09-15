@@ -1,0 +1,24 @@
+<html>
+  <script>
+    /*Tema: Receber um número como paramêtro
+    e verificar se é igual ao número na lista.
+    Se for igual deve para a função e retorna 'true'.
+    Se não for igual deve retornar 'false'.*/
+    
+    //VAR
+    var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+
+    //FUNÇÃO
+      function verificaNumero(numero) { //recebe 
+        var existe = false; // informa se for falso
+        for (var i = 0; i < lista.length; i++) { //var; verifica toda a lista; para
+          if (lista[i] === numero) { //verifica se o valor é igual a lista
+            existe = true; //informa se for verdadeiro
+            break; // interrompe quando localiza
+          }  
+        }
+        return existe; //retorna se é verdadeiro ou falso
+      }
+    
+  </script>
+</html>

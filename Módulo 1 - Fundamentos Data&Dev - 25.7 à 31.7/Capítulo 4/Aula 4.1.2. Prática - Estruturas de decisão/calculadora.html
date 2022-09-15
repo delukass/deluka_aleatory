@@ -1,0 +1,35 @@
+<html>
+  <script>
+    //VAR
+    var resultado;
+    
+    //FUNÇÃO
+    function calculo(operacao, num1, num2) {
+            
+      if (operacao === "SOMA") { //SOMA
+        resultado = num1 + num2;
+        
+      } else if (operacao === "SUBTRACAO") { //SUBTRAÇÃO
+        resultado = num1 - num2;
+        
+      } else if (operacao === "MULTIPLICACAO") { //MULTIPLICAÇÃO
+        resultado = num1 * num2;
+        
+      } else if (operacao === "DIVISAO") { //DIVISÃO
+        resultado = num1 / num2;
+        
+      } else if (operacao === "RESTO") { //RESTO
+        resultado = num1 % num2;
+        
+      } else if (operacao === "PORCENTAGEM") { //PORCENTAGEM
+        resultado = num1 * num2 / 100;
+        
+      } else {
+        console.log("Operação inválida."); //OPERAÇÃO ERRADA
+        
+      } return resultado; //MOSTRA O RESULTADO
+
+    }
+    
+  </script>
+</html>

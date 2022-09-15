@@ -1,0 +1,53 @@
+<html>
+  <script>
+    //VAR
+      var carros;
+      var primeiroCarro;
+      var segundoCarro;
+      var terceiroCarro;
+
+    //VALORES
+      carros = ['Gol', 'Palio', 'Uno'];
+      primeiroCarro = carros[0];
+      segundoCarro = carros[1];
+      terceiroCarro = carros[2];
+     
+    //CONSOLES
+      console.log(carros);
+      console.log('Primeira posição: '+primeiroCarro);
+      console.log('Segunda posição: '+segundoCarro);
+      console.log('Terceira posição: '+terceiroCarro);
+
+    //ALTERAÇÕES
+      carros[2] = 'Argo';
+      console.log(carros[2]);
+
+    //ARRAY
+      console.log('Tamanho do Array: '+carros.length);
+      console.log('Último elemento do Array: '+carros[carros.length - 1]);
+    
+      carros[3] = 'Sandero';
+      console.log('Último elemento do Array: '+carros[carros.length - 1]);
+
+    //SEM SABER A QUANTIDADE
+      carros[carros.length] = 'Civic';
+      console.log('Último elemento do Array: '+carros[carros.length - 1]);
+
+    //INSERIR ELEMENTO NO FIM DA LISTA (.push)
+      carros.push('Polo');
+      console.log(carros);
+
+    //REMOVER O ÚLTIMO ELEMENTO DA LISTA (.pop)
+      console.log(carros.pop());
+      console.log(carros);
+
+    //INSERIR NO INICIO DA LISTA (.unshift)
+      carros.unshift('Jetta');
+      console.log(carros);
+
+    //REMOVER O PRIMEIRO ELEMENTO DA LISTA (.shift)
+      console.log(carros.shift());
+      console.log(carros);
+    
+  </script>
+</html>

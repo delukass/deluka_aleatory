@@ -1,0 +1,27 @@
+<html>
+  <script>
+    
+    function verificarDivisivel(numero) {
+      if (numero % 3 === 0 || numero % 5 === 0) {
+        return true; 
+      } else {
+        return false;
+      }
+    }
+    
+        var soma = 0;
+        var lista = [];
+    
+    for (var i = 3; i <= 999; i++) {
+      if (verificarDivisivel(i)) {
+        soma = soma + i;
+        lista.push(i);
+      }
+    }
+	
+	console.log(soma);
+	console.log(lista);
+   
+     
+  </script>
+</html>

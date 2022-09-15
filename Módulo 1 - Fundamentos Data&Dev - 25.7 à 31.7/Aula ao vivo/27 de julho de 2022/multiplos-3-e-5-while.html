@@ -1,0 +1,32 @@
+<html>
+  <script>
+    
+    function verificarDivisivel(numero) {
+      if (numero % 3 === 0 || numero % 5 === 0) {
+        return true; 
+      } else {
+        return false;
+      }
+    }
+    
+        var soma = 0;
+        var lista = [];
+    
+
+    function somaMultiplos3e5() {
+      var i = 3;
+    
+    while (i <= 999) {
+      if (verificarDivisivel(i)) {
+        soma = soma + i;
+        lista.push(i);
+      }
+        i++;
+    }
+      return soma;
+	  
+	  console.log(lista);
+    }
+     
+  </script>
+</html>

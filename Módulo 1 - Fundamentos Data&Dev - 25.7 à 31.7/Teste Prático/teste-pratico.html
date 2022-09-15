@@ -1,0 +1,24 @@
+<html>
+  <script>
+   
+     function primo(num) { // verifica se o numero digitado é "1", que não é primo
+     if(num!=1){
+      for (var i = 2; i < num; i++)
+        if (num % i == 0) return false;
+      return num !== 1;
+      return console.log("O número " + (num) + " não é primo"); //retorna se informar 1
+       
+    }
+    }
+
+    function verificaPrimo(num) { // verifica se é primo
+      if (primo(num)) {
+       console.log("O número " + (num) + " é primo"); //retorna se for primo
+        
+      } else {
+       console.log("O número " + (num) + " não é primo"); //retorna se não for primo
+      }
+    }
+    
+  </script>
+</html>
